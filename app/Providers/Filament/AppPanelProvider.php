@@ -19,6 +19,7 @@ class AppPanelProvider extends PanelProvider
             ->plugins([
                 new \lockscreen\FilamentLockscreen\Lockscreen(),
                 \Hasnayeen\Themes\ThemesPlugin::make(),
+                \Stephenjude\FilamentBlog\BlogPlugin::make(),
                 \BezhanSalleh\FilamentLanguageSwitch\FilamentLanguageSwitchPlugin::make(),
                 \BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin::make(),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
