@@ -20,6 +20,7 @@ class AppPanelProvider extends PanelProvider
                 new \lockscreen\FilamentLockscreen\Lockscreen(),
                 \Hasnayeen\Themes\ThemesPlugin::make(),
                 \BezhanSalleh\FilamentLanguageSwitch\FilamentLanguageSwitchPlugin::make(),
+                \BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin::make(),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
                     ->gridColumns([
                         'default' => 1,
