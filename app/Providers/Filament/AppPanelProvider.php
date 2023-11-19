@@ -28,22 +28,32 @@ class AppPanelProvider extends PanelProvider
             ->path('app')
             ->login()
             ->plugins([
-            \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
-                ->gridColumns([
-                    'default' => 1,
-                    'sm' => 2,
-                    'lg' => 3
-                ])
-                ->sectionColumnSpan(1)
-                ->checkboxListColumns([
-                    'default' => 1,
-                    'sm' => 2,
-                    'lg' => 4,
-                ])
-                ->resourceCheckboxListColumns([
-                    'default' => 1,
-                    'sm' => 2,
-                ]),
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
+                    ->gridColumns([
+                        'default' => 1,
+                        'sm' => 2,
+                        'lg' => 3
+                    ])
+                    ->sectionColumnSpan(1)
+                    ->checkboxListColumns([
+                        'default' => 1,
+                        'sm' => 2,
+                        'lg' => 4,
+                    ])
+                    ->resourceCheckboxListColumns([
+                        'default' => 1,
+                        'sm' => 2,
+                    ]),
+                \Awcodes\Overlook\OverlookPlugin::make()
+                    ->sort(2)
+                    ->columns([
+                        'default' => 1,
+                        'sm' => 2,
+                        'md' => 3,
+                        'lg' => 4,
+                        'xl' => 5,
+                        '2xl' => null,
+                    ]),
             ])
             ->colors([
                 'primary' => Color::Amber,
@@ -57,6 +67,7 @@ class AppPanelProvider extends PanelProvider
             ->widgets([
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
+                \Awcodes\Overlook\Widgets\OverlookWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
