@@ -19,6 +19,7 @@ class AppPanelProvider extends PanelProvider
             ->plugins([
                 new \lockscreen\FilamentLockscreen\Lockscreen(),
                 \Hasnayeen\Themes\ThemesPlugin::make(),
+                \BezhanSalleh\FilamentLanguageSwitch\FilamentLanguageSwitchPlugin::make(),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
                     ->gridColumns([
                         'default' => 1,
