@@ -16,7 +16,8 @@
         "hasnayeen/themes": "^3.0",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "marjose123/filament-lockscreen": "^2.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

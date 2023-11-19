@@ -17,6 +17,7 @@ class AppPanelProvider extends PanelProvider
             ->path('app')
             ->login()
             ->plugins([
+                new \lockscreen\FilamentLockscreen\Lockscreen(),
                 \Hasnayeen\Themes\ThemesPlugin::make(),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
                     ->gridColumns([
@@ -73,6 +74,7 @@ class AppPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 \Filament\Http\Middleware\Authenticate::class,
+                \lockscreen\FilamentLockscreen\Http\Middleware\Locker::class,
             ])
             ->viteTheme('resources/css/filament/app/theme.css');
     }
