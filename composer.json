@@ -20,6 +20,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "marjose123/filament-lockscreen": "^2.0",
+        "pxlrbt/filament-environment-indicator": "^2.0",
         "saade/filament-laravel-log": "^3.0",
         "stephenjude/filament-blog": "^2.0",
         "z3d0x/filament-logger": "^0.6.1"
