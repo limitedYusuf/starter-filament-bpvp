@@ -18,6 +18,7 @@ class AppPanelProvider extends PanelProvider
             ->login()
             ->plugins([
                 new \lockscreen\FilamentLockscreen\Lockscreen(),
+                \Saade\FilamentLaravelLog\FilamentLaravelLogPlugin::make(),
                 \Hasnayeen\Themes\ThemesPlugin::make(),
                 \Stephenjude\FilamentBlog\BlogPlugin::make(),
                 \BezhanSalleh\FilamentLanguageSwitch\FilamentLanguageSwitchPlugin::make(),
